@@ -37,7 +37,7 @@ module Nico
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
-    config.action_view.sanitized_allowed_tags = 'embed', 'object', 'param', 'p', 'iframe'
+    config.action_view.sanitized_allowed_tags = 'img','embed', 'object', 'param', 'p', 'iframe'
     
   end
 end
