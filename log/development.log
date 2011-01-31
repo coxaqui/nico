@@ -10720,3 +10720,2571 @@ Started GET "/more" for 127.0.0.1 at Mon Jan 31 04:19:33 -0800 2011
   [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
 Rendered viewer/show.html.erb within layouts/application (123.7ms)
 Completed 200 OK in 156ms (Views: 130.3ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:28:19 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mPage Load (15.8ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mUser Load (0.9ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (150.3ms)
+Completed 200 OK in 306ms (Views: 207.8ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Mon Jan 31 04:28:23 -0800 2011
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:28:23 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (56.6ms)
+Completed 200 OK in 102ms (Views: 63.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:28:25 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 153ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:28:28 -0800 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"FS2GNldGZRw/IXYCpFU968sxFw8bcDcgIxENVddmEqA=", "utf8"=>"✓", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"asdf"}}
+Completed   in 9ms
+  Processing by Devise::SessionsController#new as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"FS2GNldGZRw/IXYCpFU968sxFw8bcDcgIxENVddmEqA=", "utf8"=>"✓", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"asdf"}}
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 34ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:34:02 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (269.3ms)
+Completed 200 OK in 307ms (Views: 284.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:34:25 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 36ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:35:43 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 35ms (Views: 19.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:35:45 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.9ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.7ms)
+Completed 200 OK in 115ms (Views: 21.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:35:53 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 36ms (Views: 20.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:37:33 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.6ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 34ms (Views: 19.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:38:21 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.5ms)
+Rendered devise/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 119ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:47:31 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.1ms)
+Rendered devise/sessions/new.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 137ms (Views: 77.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:48:33 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (2.0ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 38ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/home" for 127.0.0.1 at Mon Jan 31 04:48:39 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (24.6ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 85ms (Views: 53.2ms | ActiveRecord: 24.6ms)
+
+
+Started GET "/about" for 127.0.0.1 at Mon Jan 31 04:48:41 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"about"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'about') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'about') LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 32ms (Views: 24.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at Mon Jan 31 04:49:29 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"about"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'about') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'about') LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 59ms (Views: 51.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at Mon Jan 31 04:49:31 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 39ms (Views: 30.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/metal" for 127.0.0.1 at Mon Jan 31 04:49:32 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"metal"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'metal') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'metal') LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 43ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/about" for 127.0.0.1 at Mon Jan 31 04:49:33 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"about"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'about') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'about') LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (19.1ms)
+Completed 200 OK in 153ms (Views: 145.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:50:36 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.7ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 35ms (Views: 19.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:50:43 -0800 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"FS2GNldGZRw/IXYCpFU968sxFw8bcDcgIxENVddmEqA=", "utf8"=>"✓", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"admin@gmail.com"}}
+  [1m[35mUser Load (17.5ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'admin@gmail.com') LIMIT 1
+  [1m[36mAREL (15.8ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = '2011-01-31 12:50:44.081467', "updated_at" = '2011-01-31 12:50:44.082131', "last_sign_in_at" = '2011-01-29 17:12:17.228874', "sign_in_count" = 15 WHERE ("users"."id" = 1)[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 920ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:50:44 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 43ms (Views: 35.6ms | ActiveRecord: 33.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:51:24 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+ERROR: compiling _app_views_layouts_application_html_erb___1589723556_2172318400_0 RAISED compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+... link_to 'Admin ['current_user.email']', viewerLinkeage_path...
+                              ^
+Function body:           def _app_views_layouts_application_html_erb___1589723556_2172318400_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Composer, Meet Corpse</title>
+  ');@output_buffer.append= ( stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/red/style", "web-app-theme/override", :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults, :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="/">Composer, Meet Corpse</a></h1>
+      <div id="user-navigation">
+        <ul class="wat-cf">
+			
+');			if user_signed_in?
+			end
+			 if user_signed_in? 
+@output_buffer.safe_concat('				<li class="admin">');@output_buffer.append= ( link_to 'Admin ['current_user.email']', viewerLinkeage_path( 'pages' ) );@output_buffer.safe_concat('</li>
+				<li></li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</li>
+');			 end 
+@output_buffer.safe_concat('        </ul>
+      </div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </li>
+        </ul>
+      </div>
+    </div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</p>
+          </div>
+');         end 
+@output_buffer.safe_concat('      </div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</p>
+          </div>      
+        </div>
+      </div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>    
+  </div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:63:in `compile'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__199325921__process_action__453433196__callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered viewer/show.html.erb within layouts/application (47.8ms)
+Completed   in 63ms
+
+ActionView::Template::Error (compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:19: syntax error, unexpected tIDENTIFIER, expecting ')'
+... link_to 'Admin ['current_user.email']', viewerLinkeage_path...
+                              ^):
+    16: 			<%if user_signed_in?%>
+    17: 			<%end%>
+    18: 			<% if user_signed_in? %>
+    19: 				<li class="admin"><%= link_to 'Admin ['current_user.email']', viewerLinkeage_path( 'pages' ) %></li>
+    20: 				<li></li>						
+    21: 				<li class="logout"><%= link_to " Sign out", destroy_user_session_path %></li>
+    22: 			<% else %>
+  app/views/layouts/application.html.erb:63:in `compile'
+
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (265.2ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (362.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:52:33 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+ERROR: compiling _app_views_layouts_application_html_erb___1589723556_2174924040_0 RAISED compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: unmatched ): /li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:26: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+      <div id="main-navigation">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+        <ul class="wat-cf">
+         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+        	<li class="first">');@output_bu...
+        	 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home'...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: syntax error, unexpected tIDENTIFIER, expecting ')'
+...e', viewerLinkeage_path( 'home' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: syntax error, unexpected tCONSTANT, expecting ')'
+...uffer.append= ( link_to 'About Us', viewerLinkeage_path( 'ab...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: syntax error, unexpected tIDENTIFIER, expecting ')'
+...', viewerLinkeage_path( 'about' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( link_to 'More', viewerLinkeage_path( 'more'...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting ')'
+...e', viewerLinkeage_path( 'more' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:34: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:35: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:36: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:37: syntax error, unexpected '<'
+    <div id="wrapper" class="wat-cf">
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:37: syntax error, unexpected kCLASS, expecting ')'
+    <div id="wrapper" class="wat-cf">
+                           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:38: syntax error, unexpected '<'
+      <div class="flash">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:40: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...e_concat('          <div class="message ');@output_buffer.ap...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: syntax error, unexpected '<'
+            <p>');@output_buffer.append= ( ...
+             ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:42: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: unknown regexp option - p
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: unmatched ): /div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+          </div>      
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:51: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unmatched ): /div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:56: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:57: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:58: syntax error, unexpected '<'
+</body>
+ ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:59: unknown regexp options - htl
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: unterminated string meets end of file
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_layouts_application_html_erb___1589723556_2174924040_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Composer, Meet Corpse</title>
+  ');@output_buffer.append= ( stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/red/style", "web-app-theme/override", :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults, :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="/">Composer, Meet Corpse</a></h1>
+      <div id="user-navigation">
+        <ul class="wat-cf">
+			
+');			if user_signed_in?
+			end
+			 if user_signed_in? 
+@output_buffer.safe_concat('				<li class="admin">');@output_buffer.append= ( link_to 'Admin ['<%=current_user.email );@output_buffer.safe_concat('\']\', viewerLinkeage_path( \'pages\' ) %></li>
+				<li></li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</li>
+');			 end 
+@output_buffer.safe_concat('        </ul>
+      </div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </li>
+        </ul>
+      </div>
+    </div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</p>
+          </div>
+');         end 
+@output_buffer.safe_concat('      </div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</p>
+          </div>      
+        </div>
+      </div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>    
+  </div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60:in `compile'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__199325921__process_action__453433196__callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered viewer/show.html.erb within layouts/application (6.5ms)
+Completed   in 26ms
+
+ActionView::Template::Error (compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: unmatched ): /li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:26: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:27: syntax error, unexpected '<'
+      <div id="main-navigation">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:28: syntax error, unexpected '<'
+        <ul class="wat-cf">
+         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: syntax error, unexpected '<'
+        	<li class="first">');@output_bu...
+        	 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home'...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: syntax error, unexpected tIDENTIFIER, expecting ')'
+...e', viewerLinkeage_path( 'home' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: syntax error, unexpected tCONSTANT, expecting ')'
+...uffer.append= ( link_to 'About Us', viewerLinkeage_path( 'ab...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: syntax error, unexpected tIDENTIFIER, expecting ')'
+...', viewerLinkeage_path( 'about' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: syntax error, unexpected tCONSTANT, expecting ')'
+...buffer.append= ( link_to 'More', viewerLinkeage_path( 'more'...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: syntax error, unexpected tIDENTIFIER, expecting ')'
+...e', viewerLinkeage_path( 'more' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:34: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:35: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:36: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:37: syntax error, unexpected '<'
+    <div id="wrapper" class="wat-cf">
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:37: syntax error, unexpected kCLASS, expecting ')'
+    <div id="wrapper" class="wat-cf">
+                           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:38: syntax error, unexpected '<'
+      <div class="flash">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:40: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...e_concat('          <div class="message ');@output_buffer.ap...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: syntax error, unexpected '<'
+            <p>');@output_buffer.append= ( ...
+             ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:42: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: unknown regexp option - p
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: unmatched ): /div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+          </div>      
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:51: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unmatched ): /div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:56: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:57: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:58: syntax error, unexpected '<'
+</body>
+ ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:59: unknown regexp options - htl
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: unterminated string meets end of file
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: syntax error, unexpected $end, expecting ')'):
+    20: 				<li></li>						
+    21: 				<li class="logout"><%= link_to " Sign out", destroy_user_session_path %></li>
+    22: 			<% else %>
+    23: 				<li class="login"> <%= link_to "Sign in", new_user_session_path %></li>
+    24: 			<% end %>
+    25:         </ul>
+    26:       </div>
+  app/views/layouts/application.html.erb:60:in `compile'
+
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (310.6ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (319.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:54:19 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (28.9ms)
+Completed 200 OK in 120ms (Views: 35.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:54:49 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (69.4ms)
+Completed 200 OK in 84ms (Views: 77.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:56:00 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+ERROR: compiling _app_views_layouts_application_html_erb___1589723556_2174491220_0 RAISED compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unmatched ): /li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...fer.safe_concat('				<li class="login"> ');@output_buffer.ap...
+                 				         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unmatched ): /li>
+');			 end 
+@output_buffer.safe_concat('        </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unmatched ): /div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting ')'
+...', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'co...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+... viewerLinkeage_path( 'contact' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:34: syntax error, unexpected '<'
+        </ul>
+         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:35: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unknown regexp option - p
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unmatched ): /div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+          </div>
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unmatched ): /div>
+');         end 
+@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:45: syntax error, unexpected '<'
+      <div id="main">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+');@output_buffer.safe_concat('        <div id="footer">
+                                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:48: syntax error, unexpected '<'
+          <div class="block">
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected '<'
+            <p>Copyright &copy; ');@output_...
+             ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tAMPER, expecting kDO or '{' or '('
+            <p>Copyright &copy; ');@output_buffer.append...
+                          ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: dynamic constant assignment
+...buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+...concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+          </div>      
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:51: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unmatched ): /div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:56: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:57: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:58: syntax error, unexpected '<'
+</body>
+ ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:59: unknown regexp options - htl
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: unterminated string meets end of file
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_layouts_application_html_erb___1589723556_2174491220_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Composer, Meet Corpse</title>
+  ');@output_buffer.append= ( stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/red/style", "web-app-theme/override", :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults, :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="/">Composer, Meet Corpse</a></h1>
+      <div id="user-navigation">
+        <ul class="wat-cf">
+			
+');			if user_signed_in?
+			end
+			 if user_signed_in? 
+@output_buffer.safe_concat('				<li class="admin">');@output_buffer.append= ( link_to 'Admin'<%=current_user.email);@output_buffer.safe_concat(', viewerLinkeage_path( \'pages\' ) %> </li>
+				<li class="admin">');@output_buffer.append= (current_user.email);@output_buffer.safe_concat('</li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</li>
+');			 end 
+@output_buffer.safe_concat('        </ul>
+      </div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </li>
+        </ul>
+      </div>
+    </div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</p>
+          </div>
+');         end 
+@output_buffer.safe_concat('      </div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</p>
+          </div>      
+        </div>
+      </div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>    
+  </div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60:in `compile'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__199325921__process_action__453433196__callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered viewer/show.html.erb within layouts/application (5.8ms)
+Completed   in 21ms
+
+ActionView::Template::Error (compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unmatched ): /li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...fer.safe_concat('				<li class="login"> ');@output_buffer.ap...
+                 				         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unmatched ): /li>
+');			 end 
+@output_buffer.safe_concat('        </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unmatched ): /div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting ')'
+...', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'co...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+... viewerLinkeage_path( 'contact' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:34: syntax error, unexpected '<'
+        </ul>
+         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:35: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unknown regexp option - p
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unmatched ): /div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+          </div>
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unmatched ): /div>
+');         end 
+@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:45: syntax error, unexpected '<'
+      <div id="main">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+');@output_buffer.safe_concat('        <div id="footer">
+                                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:48: syntax error, unexpected '<'
+          <div class="block">
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected '<'
+            <p>Copyright &copy; ');@output_...
+             ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tAMPER, expecting kDO or '{' or '('
+            <p>Copyright &copy; ');@output_buffer.append...
+                          ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: dynamic constant assignment
+...buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+...concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+          </div>      
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:51: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unmatched ): /div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:56: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:57: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:58: syntax error, unexpected '<'
+</body>
+ ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:59: unknown regexp options - htl
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: unterminated string meets end of file
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: syntax error, unexpected $end, expecting ')'):
+    18: 			<% if user_signed_in? %>
+    19: 				<li class="admin"><%= link_to 'Admin'<%=current_user.email%>, viewerLinkeage_path( 'pages' ) %> </li>
+    20: 				<li class="admin"><%=current_user.email%></li>						
+    21: 				<li class="logout"><%= link_to " Sign out", destroy_user_session_path %></li>
+    22: 			<% else %>
+    23: 				<li class="login"> <%= link_to "Sign in", new_user_session_path %></li>
+    24: 			<% end %>
+  app/views/layouts/application.html.erb:60:in `compile'
+
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (238.0ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (246.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:56:08 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+ERROR: compiling _app_views_layouts_application_html_erb___1589723556_2172160420_0 RAISED compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+...er.append= ( link_to 'Admin'+<%=current_user.email);@output_...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unmatched ): /li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...fer.safe_concat('				<li class="login"> ');@output_buffer.ap...
+                 				         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unmatched ): /li>
+');			 end 
+@output_buffer.safe_concat('        </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unmatched ): /div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting ')'
+...', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'co...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+... viewerLinkeage_path( 'contact' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:34: syntax error, unexpected '<'
+        </ul>
+         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:35: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unknown regexp option - p
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unmatched ): /div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+          </div>
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unmatched ): /div>
+');         end 
+@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:45: syntax error, unexpected '<'
+      <div id="main">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+');@output_buffer.safe_concat('        <div id="footer">
+                                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:48: syntax error, unexpected '<'
+          <div class="block">
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected '<'
+            <p>Copyright &copy; ');@output_...
+             ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tAMPER, expecting kDO or '{' or '('
+            <p>Copyright &copy; ');@output_buffer.append...
+                          ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: dynamic constant assignment
+...buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+...concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+          </div>      
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:51: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unmatched ): /div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:56: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:57: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:58: syntax error, unexpected '<'
+</body>
+ ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:59: unknown regexp options - htl
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: unterminated string meets end of file
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_layouts_application_html_erb___1589723556_2172160420_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Composer, Meet Corpse</title>
+  ');@output_buffer.append= ( stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/red/style", "web-app-theme/override", :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults, :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="/">Composer, Meet Corpse</a></h1>
+      <div id="user-navigation">
+        <ul class="wat-cf">
+			
+');			if user_signed_in?
+			end
+			 if user_signed_in? 
+@output_buffer.safe_concat('				<li class="admin">');@output_buffer.append= ( link_to 'Admin'+<%=current_user.email);@output_buffer.safe_concat(', viewerLinkeage_path( \'pages\' ) %> </li>
+				<li class="admin">');@output_buffer.append= (current_user.email);@output_buffer.safe_concat('</li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</li>
+');			 end 
+@output_buffer.safe_concat('        </ul>
+      </div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </li>
+        </ul>
+      </div>
+    </div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</p>
+          </div>
+');         end 
+@output_buffer.safe_concat('      </div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</p>
+          </div>      
+        </div>
+      </div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>    
+  </div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60:in `compile'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__199325921__process_action__453433196__callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered viewer/show.html.erb within layouts/application (85.4ms)
+Completed   in 103ms
+
+ActionView::Template::Error (compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:19: syntax error, unexpected '<'
+...er.append= ( link_to 'Admin'+<%=current_user.email);@output_...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unmatched ): /li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...fer.safe_concat('				<li class="login"> ');@output_buffer.ap...
+                 				         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unmatched ): /li>
+');			 end 
+@output_buffer.safe_concat('        </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unmatched ): /div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting ')'
+...', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'co...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+... viewerLinkeage_path( 'contact' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:34: syntax error, unexpected '<'
+        </ul>
+         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:35: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unknown regexp option - p
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unmatched ): /div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+          </div>
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unmatched ): /div>
+');         end 
+@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:45: syntax error, unexpected '<'
+      <div id="main">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+');@output_buffer.safe_concat('        <div id="footer">
+                                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:48: syntax error, unexpected '<'
+          <div class="block">
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected '<'
+            <p>Copyright &copy; ');@output_...
+             ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tAMPER, expecting kDO or '{' or '('
+            <p>Copyright &copy; ');@output_buffer.append...
+                          ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: dynamic constant assignment
+...buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+...concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+          </div>      
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:51: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unmatched ): /div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:56: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:57: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:58: syntax error, unexpected '<'
+</body>
+ ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:59: unknown regexp options - htl
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: unterminated string meets end of file
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: syntax error, unexpected $end, expecting ')'):
+    16: 			<%if user_signed_in?%>
+    17: 			<%end%>
+    18: 			<% if user_signed_in? %>
+    19: 				<li class="admin"><%= link_to 'Admin'+<%=current_user.email%>, viewerLinkeage_path( 'pages' ) %> </li>
+    20: 				<li class="admin"><%=current_user.email%></li>						
+    21: 				<li class="logout"><%= link_to " Sign out", destroy_user_session_path %></li>
+    22: 			<% else %>
+  app/views/layouts/application.html.erb:60:in `compile'
+
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (229.9ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (311.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:56:20 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+ERROR: compiling _app_views_layouts_application_html_erb___1589723556_2174868940_0 RAISED compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:19: syntax error, unexpected $undefined, expecting ')'
+...;@output_buffer.safe_concat('\', viewerLinkeage_path( \'page...
+                              ^
+Function body:           def _app_views_layouts_application_html_erb___1589723556_2174868940_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Composer, Meet Corpse</title>
+  ');@output_buffer.append= ( stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/red/style", "web-app-theme/override", :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults, :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="/">Composer, Meet Corpse</a></h1>
+      <div id="user-navigation">
+        <ul class="wat-cf">
+			
+');			if user_signed_in?
+			end
+			 if user_signed_in? 
+@output_buffer.safe_concat('				<li class="admin">');@output_buffer.append= ( link_to 'Admin<%=current_user.email);@output_buffer.safe_concat('\', viewerLinkeage_path( \'pages\' ) %> </li>
+				<li class="admin">');@output_buffer.append= (current_user.email);@output_buffer.safe_concat('</li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</li>
+');			 end 
+@output_buffer.safe_concat('        </ul>
+      </div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </li>
+        </ul>
+      </div>
+    </div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</p>
+          </div>
+');         end 
+@output_buffer.safe_concat('      </div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</p>
+          </div>      
+        </div>
+      </div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>    
+  </div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:63:in `compile'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__199325921__process_action__453433196__callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered viewer/show.html.erb within layouts/application (5.6ms)
+Completed   in 21ms
+
+ActionView::Template::Error (compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:19: syntax error, unexpected $undefined, expecting ')'
+...;@output_buffer.safe_concat('\', viewerLinkeage_path( \'page...
+                              ^):
+    16: 			<%if user_signed_in?%>
+    17: 			<%end%>
+    18: 			<% if user_signed_in? %>
+    19: 				<li class="admin"><%= link_to 'Admin<%=current_user.email%>', viewerLinkeage_path( 'pages' ) %> </li>
+    20: 				<li class="admin"><%=current_user.email%></li>						
+    21: 				<li class="logout"><%= link_to " Sign out", destroy_user_session_path %></li>
+    22: 			<% else %>
+  app/views/layouts/application.html.erb:63:in `compile'
+
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (328.8ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (336.0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:56:43 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+ERROR: compiling _app_views_layouts_application_html_erb___1589723556_2174190840_0 RAISED compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:19: syntax error, unexpected $undefined, expecting ')'
+...;@output_buffer.safe_concat('\', viewerLinkeage_path( \'page...
+                              ^
+Function body:           def _app_views_layouts_application_html_erb___1589723556_2174190840_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Composer, Meet Corpse</title>
+  ');@output_buffer.append= ( stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/red/style", "web-app-theme/override", :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults, :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="/">Composer, Meet Corpse</a></h1>
+      <div id="user-navigation">
+        <ul class="wat-cf">
+			
+');			if user_signed_in?
+			end
+			 if user_signed_in? 
+@output_buffer.safe_concat('				<li class="admin">');@output_buffer.append= ( link_to 'Admin:<%=current_user.email);@output_buffer.safe_concat('\', viewerLinkeage_path( \'pages\' ) %> </li>
+				<li class="admin"></li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</li>
+');			 end 
+@output_buffer.safe_concat('        </ul>
+      </div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </li>
+        </ul>
+      </div>
+    </div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</p>
+          </div>
+');         end 
+@output_buffer.safe_concat('      </div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</p>
+          </div>      
+        </div>
+      </div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>    
+  </div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:63:in `compile'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__199325921__process_action__453433196__callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered viewer/show.html.erb within layouts/application (5.3ms)
+Completed   in 20ms
+
+ActionView::Template::Error (compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:19: syntax error, unexpected $undefined, expecting ')'
+...;@output_buffer.safe_concat('\', viewerLinkeage_path( \'page...
+                              ^):
+    16: 			<%if user_signed_in?%>
+    17: 			<%end%>
+    18: 			<% if user_signed_in? %>
+    19: 				<li class="admin"><%= link_to 'Admin:<%=current_user.email%>', viewerLinkeage_path( 'pages' ) %> </li>
+    20: 				<li class="admin"></li>						
+    21: 				<li class="logout"><%= link_to " Sign out", destroy_user_session_path %></li>
+    22: 			<% else %>
+  app/views/layouts/application.html.erb:63:in `compile'
+
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (231.9ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (240.2ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:57:08 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+ERROR: compiling _app_views_layouts_application_html_erb___1589723556_2172130260_0 RAISED compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+				<li class="admin"></li>						
+				                   ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unmatched ): /li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...fer.safe_concat('				<li class="login"> ');@output_buffer.ap...
+                 				         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unmatched ): /li>
+');			 end 
+@output_buffer.safe_concat('        </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unmatched ): /div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting ')'
+...', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'co...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+... viewerLinkeage_path( 'contact' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:34: syntax error, unexpected '<'
+        </ul>
+         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:35: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unknown regexp option - p
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unmatched ): /div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+          </div>
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unmatched ): /div>
+');         end 
+@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:45: syntax error, unexpected '<'
+      <div id="main">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+');@output_buffer.safe_concat('        <div id="footer">
+                                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:48: syntax error, unexpected '<'
+          <div class="block">
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected '<'
+            <p>Copyright &copy; ');@output_...
+             ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tAMPER, expecting kDO or '{' or '('
+            <p>Copyright &copy; ');@output_buffer.append...
+                          ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: dynamic constant assignment
+...buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+...concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+          </div>      
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:51: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unmatched ): /div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:56: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:57: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:58: syntax error, unexpected '<'
+</body>
+ ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:59: unknown regexp options - htl
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: unterminated string meets end of file
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: syntax error, unexpected $end, expecting ')'
+Function body:           def _app_views_layouts_application_html_erb___1589723556_2172130260_0(local_assigns)
+            _old_virtual_path, @_virtual_path = @_virtual_path, "layouts/application";_old_output_buffer = @output_buffer;;@output_buffer = ActionView::OutputBuffer.new;@output_buffer.safe_concat('<!DOCTYPE html>
+<html>
+<head>
+  <title>Composer, Meet Corpse</title>
+  ');@output_buffer.append= ( stylesheet_link_tag "web-app-theme/base", "web-app-theme/themes/red/style", "web-app-theme/override", :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( javascript_include_tag :defaults, :cache => false );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('  ');@output_buffer.append= ( csrf_meta_tag );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('</head>
+<body>
+  <div id="container">
+    <div id="header">
+      <h1><a href="/">Composer, Meet Corpse</a></h1>
+      <div id="user-navigation">
+        <ul class="wat-cf">
+			
+');			if user_signed_in?
+			end
+			 if user_signed_in? 
+@output_buffer.safe_concat('				<li class="admin">');@output_buffer.append= ( link_to 'Admin:'<%=current_user.email);@output_buffer.safe_concat(', viewerLinkeage_path( \'pages\' ) %> </li>
+				<li class="admin"></li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</li>
+');			 else 
+@output_buffer.safe_concat('				<li class="login"> ');@output_buffer.append= ( link_to "Sign in", new_user_session_path );@output_buffer.safe_concat('</li>
+');			 end 
+@output_buffer.safe_concat('        </ul>
+      </div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'contact' ) );@output_buffer.safe_concat(' </li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </li>
+        </ul>
+      </div>
+    </div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</p>
+          </div>
+');         end 
+@output_buffer.safe_concat('      </div>
+      <div id="main">
+        ');@output_buffer.append= ( yield );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('        <div id="footer">
+          <div class="block">
+            <p>Copyright &copy; ');@output_buffer.append= ( Time.now.year );@output_buffer.safe_concat(' Composer, Meet Corpse.</p>
+          </div>      
+        </div>
+      </div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </div>
+    </div>    
+  </div>
+</body>
+</html>
+');@output_buffer.to_s
+          ensure
+            @_virtual_path, @output_buffer = _old_virtual_path, _old_output_buffer
+          end
+Backtrace: /Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60:in `compile'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:134:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:54:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/template.rb:127:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/layouts.rb:80:in `_render_layout'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:62:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:56:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_view/render/rendering.rb:26:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:114:in `_render_template'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:108:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/renderers.rb:47:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/compatibility.rb:55:in `render_to_body'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:101:in `render_to_string'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:92:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:17:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:308:in `realtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:40:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:78:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/railties/controller_runtime.rb:15:in `cleanup_view_runtime'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:39:in `render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:151:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rendering.rb:11:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:18:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:435:in `_run__199325921__process_action__453433196__callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:409:in `_run_process_action_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `send'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:93:in `run_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/callbacks.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/notifications.rb:52:in `instrument'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rescue.rb:17:in `process_action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/base.rb:120:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/abstract_controller/rendering.rb:40:in `process'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:138:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_controller/metal.rb:178:in `action'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:62:in `dispatch'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:27:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:148:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:93:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:89:in `optimized_each'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/code_generation.rb:92:in `recognize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-mount-0.6.13/lib/rack/mount/route_set.rb:139:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/routing/route_set.rb:492:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:35:in `call'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `catch'
+/Library/Ruby/Gems/1.8/gems/warden-1.0.3/lib/warden/manager.rb:34:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/methodoverride.rb:24:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/flash.rb:182:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/session/abstract_store.rb:149:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/cookies.rb:295:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:32:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/query_cache.rb:28:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:12:in `cache'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/query_cache.rb:31:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activerecord-3.0.3/lib/active_record/connection_adapters/abstract/connection_pool.rb:353:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:46:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/callbacks.rb:415:in `_run_call_callbacks'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/callbacks.rb:44:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/sendfile.rb:107:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/remote_ip.rb:48:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/show_exceptions.rb:46:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/logger.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/runtime.rb:17:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/activesupport-3.0.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `synchronize'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/lock.rb:11:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/static.rb:30:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:168:in `call'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `send'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/application.rb:77:in `method_missing'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/rack/log_tailer.rb:14:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/content_length.rb:13:in `call'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:52:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/handler/webrick.rb:13:in `run'
+/Users/lnngarrett/.gem/ruby/1.8/gems/rack-1.2.1/lib/rack/server.rb:213:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands/server.rb:65:in `start'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:30
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27:in `tap'
+/Library/Ruby/Gems/1.8/gems/railties-3.0.3/lib/rails/commands.rb:27
+script/rails:6:in `require'
+script/rails:6
+Rendered viewer/show.html.erb within layouts/application (6.0ms)
+Completed   in 21ms
+
+ActionView::Template::Error (compile error
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:20: syntax error, unexpected '<'
+				<li class="admin"></li>						
+				                   ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:21: unmatched ): /li>						
+				<li class="logout">');@output_buffer.append= ( link_to " Sign out", destroy_user_session_path );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:23: syntax error, unexpected kCLASS, expecting kDO or '{' or '('
+...fer.safe_concat('				<li class="login"> ');@output_buffer.ap...
+                 				         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:25: unmatched ): /li>
+');			 end 
+@output_buffer.safe_concat('        </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:26: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:29: unmatched ): /div>
+      <div id="main-navigation">
+        <ul class="wat-cf">
+        	<li class="first">');@output_buffer.append= ( link_to 'Home', viewerLinkeage_path( 'home' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tCONSTANT, expecting ')'
+...ffer.append= ( link_to 'Videos', viewerLinkeage_path( 'metal...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:30: syntax error, unexpected tIDENTIFIER, expecting ')'
+...', viewerLinkeage_path( 'metal' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:31: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'About Us', viewerLinkeage_path( 'about' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected '<'
+			<li>');@output_buffer.append= (...
+			 ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tCONSTANT, expecting ')'
+...fer.append= ( link_to 'Contact Us', viewerLinkeage_path( 'co...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:32: syntax error, unexpected tIDENTIFIER, expecting ')'
+... viewerLinkeage_path( 'contact' ) );@output_buffer.safe_conc...
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unknown regexp option - l
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:33: unmatched ): /li>
+			<li>');@output_buffer.append= ( link_to 'More', viewerLinkeage_path( 'more' ) );@output_buffer.safe_concat(' </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:34: syntax error, unexpected '<'
+        </ul>
+         ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:35: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:36: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unknown regexp option - p
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:41: unmatched ): /div>    
+    <div id="wrapper" class="wat-cf">
+      <div class="flash">
+');@output_buffer.append_if_string=          flash.each do |type, message| 
+@output_buffer.safe_concat('          <div class="message ');@output_buffer.append= ( type );@output_buffer.safe_concat('">
+            <p>');@output_buffer.append= ( message );@output_buffer.safe_concat('</
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:42: syntax error, unexpected '<'
+          </div>
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:44: unmatched ): /div>
+');         end 
+@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:45: syntax error, unexpected '<'
+      <div id="main">
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:47: syntax error, unexpected tIDENTIFIER, expecting kDO or '{' or '('
+');@output_buffer.safe_concat('        <div id="footer">
+                                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:48: syntax error, unexpected '<'
+          <div class="block">
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected '<'
+            <p>Copyright &copy; ');@output_...
+             ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tAMPER, expecting kDO or '{' or '('
+            <p>Copyright &copy; ');@output_buffer.append...
+                          ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting ')'
+..._buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: dynamic constant assignment
+...buffer.safe_concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:49: syntax error, unexpected tCONSTANT, expecting kDO or '{' or '('
+...concat(' Composer, Meet Corpse.</p>
+                              ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:50: syntax error, unexpected '<'
+          </div>      
+           ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:51: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:52: syntax error, unexpected '<'
+      </div>
+       ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:55: unmatched ): /div>
+      <div id="sidebar">
+        ');@output_buffer.append= ( yield :sidebar );@output_buffer.safe_concat('
+');@output_buffer.safe_concat('      </
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:56: syntax error, unexpected '<'
+    </div>    
+     ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:57: unknown regexp options - dv
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:58: syntax error, unexpected '<'
+</body>
+ ^
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:59: unknown regexp options - htl
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: unterminated string meets end of file
+/Users/lnngarrett/Desktop/Yuri/Nico/app/views/layouts/application.html.erb:60: syntax error, unexpected $end, expecting ')'):
+    17: 			<%end%>
+    18: 			<% if user_signed_in? %>
+    19: 				<li class="admin"><%= link_to 'Admin:'<%=current_user.email%>, viewerLinkeage_path( 'pages' ) %> </li>
+    20: 				<li class="admin"></li>						
+    21: 				<li class="logout"><%= link_to " Sign out", destroy_user_session_path %></li>
+    22: 			<% else %>
+    23: 				<li class="login"> <%= link_to "Sign in", new_user_session_path %></li>
+  app/views/layouts/application.html.erb:60:in `compile'
+
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (190.2ms)
+Rendered /Users/lnngarrett/.gem/ruby/1.8/gems/actionpack-3.0.3/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (201.7ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:57:39 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 42ms (Views: 34.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:57:59 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[35mPage Load (0.2ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (26.1ms)
+Completed 200 OK in 43ms (Views: 33.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:58:25 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 44ms (Views: 36.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Mon Jan 31 04:58:30 -0800 2011
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:58:30 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 30ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:58:32 -0800 2011
+  Processing by Devise::SessionsController#new as HTML
+Rendered devise/shared/_links.erb (1.8ms)
+Rendered devise/sessions/new.html.erb within layouts/application (12.5ms)
+Completed 200 OK in 114ms (Views: 62.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at Mon Jan 31 04:58:40 -0800 2011
+  Processing by Devise::SessionsController#create as HTML
+  Parameters: {"commit"=>"Sign in", "authenticity_token"=>"FS2GNldGZRw/IXYCpFU968sxFw8bcDcgIxENVddmEqA=", "utf8"=>"✓", "user"=>{"remember_me"=>"0", "password"=>"[FILTERED]", "email"=>"admin@gmail.com"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'admin@gmail.com') LIMIT 1[0m
+  [1m[35mAREL (0.4ms)[0m  UPDATE "users" SET "updated_at" = '2011-01-31 12:58:40.679435', "current_sign_in_at" = '2011-01-31 12:58:40.678784', "last_sign_in_at" = '2011-01-31 12:50:44.081467', "sign_in_count" = 16 WHERE ("users"."id" = 1)
+Redirected to http://localhost:3000/
+Completed 302 Found in 127ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:58:40 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendered viewer/show.html.erb within layouts/application (113.9ms)
+Completed 200 OK in 128ms (Views: 120.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at Mon Jan 31 04:58:46 -0800 2011
+  Processing by Devise::SessionsController#destroy as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+Redirected to http://localhost:3000/
+Completed 302 Found in 18ms
+
+
+Started GET "/" for 127.0.0.1 at Mon Jan 31 04:58:46 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 34ms (Views: 27.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contact" for 127.0.0.1 at Mon Jan 31 05:00:21 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"contact"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'contact') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'contact') LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (16.6ms)
+Completed 200 OK in 120ms (Views: 23.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/home" for 127.0.0.1 at Mon Jan 31 05:03:19 -0800 2011
+  Processing by ViewerController#show as HTML
+  Parameters: {"name"=>"home"}
+  [1m[36mPage Load (0.2ms)[0m  [1mSELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "pages".* FROM "pages" WHERE ("pages"."name" = 'home') LIMIT 1
+Rendered viewer/show.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 31ms (Views: 23.3ms | ActiveRecord: 0.2ms)

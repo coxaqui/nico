@@ -11,16 +11,11 @@
     <div id="header">
       <h1><a href="/">Composer, Meet Corpse</a></h1>
       <div id="user-navigation">
-        <ul class="#wrapper.wat-cf">
-			<li><%= link_to 'Home', viewerLinkeage_path( 'home' ) %> </li>
-			<li><%= link_to 'Videos', viewerLinkeage_path( 'metal' ) %> </li>
-			<li><%= link_to 'About Us', viewerLinkeage_path( 'about' ) %> </li>
-			<li><%= link_to 'Contact Us', viewerLinkeage_path( 'contact' ) %> </li>
-			<li><%= link_to 'More', viewerLinkeage_path( 'more' ) %> </li>
+        <ul class="wat-cf">
 			<%if user_signed_in?%>
 			<%end%>
 			<% if user_signed_in? %>
-				<li class="admin"><%= link_to 'Admin', viewerLinkeage_path( 'pages' ) %></li>
+				<li class="admin"><%= link_to 'Admin:', viewerLinkeage_path( 'pages' ) %> <%=current_user.email%> </li>
 				<li></li>						
 				<li class="logout"><%= link_to " Sign out", destroy_user_session_path %></li>
 			<% else %>
@@ -29,7 +24,13 @@
         </ul>
       </div>
       <div id="main-navigation">
-        <ul class="wat-cf"></ul>
+        <ul class="wat-cf">
+        	<li class="first"><%= link_to 'Home', viewerLinkeage_path( 'home' ) %> </li>
+			<li><%= link_to 'Videos', viewerLinkeage_path( 'metal' ) %> </li>
+			<li><%= link_to 'About Us', viewerLinkeage_path( 'about' ) %> </li>
+			<li><%= link_to 'Contact Us', viewerLinkeage_path( 'contact' ) %> </li>
+			<li><%= link_to 'More', viewerLinkeage_path( 'more' ) %> </li>
+        </ul>
       </div>
     </div>    
     <div id="wrapper" class="wat-cf">
